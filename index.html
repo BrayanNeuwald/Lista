@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<!--  ------------------  botões ------------------------>
+
+    <div class="botoes">
+
+        <div id="salvar">
+            <button onclick="adicionarNaTabela()">Salvar</button>
+        </div>
+
+        <div id="excluir">
+            <button onclick="limparTabela()">Limpar</button>
+        </div>
+
+        <div id="sair">
+            <a href="./sair.html">Sair</a>
+        </div>
+
+    </div>
+
+<!-- ---------------   campos de nome e email ----------------->
+    <div class="campos">
+
+        <div class="nome">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+
+        <div class="email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+    </div>
+
+    <table id="tabela">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="corpo-tabela">
+    
+        </tbody>
+    </table>
+
+<script src="./js/script.js"></script>
+</body>
+
+</html>
